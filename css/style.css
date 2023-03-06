@@ -1,0 +1,590 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:font1 ;
+    src: url(../fonte/ernestone.ttf) format('truetype');
+    font-weight: normal;
+    font-style:normal;
+}
+
+/******PADRÃO PARA O PROJETO*******/
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+/**********************************/
+*{
+    margin: 0pc;
+    padding: 0pc;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+/************CABEÇARIO****************/
+
+header{
+	padding:20px 2%;
+}
+
+header .logo img{
+	float: left;
+	width: 236px;
+}
+
+nav.menu-mobile{
+	float: right;
+	width: 28px;
+	height: 28px;
+	margin-top:7px;
+	cursor: pointer;
+	background-image: url('../imagens/menu-mobile.png');
+	background-size:100% 100%;
+	display: none;
+}
+
+nav.menu-mobile ul{
+	display: none;
+	z-index: 999;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 60px;
+	background-color: white;
+}
+
+nav.menu-mobile ul li{
+	text-transform: uppercase;
+}
+
+nav.menu-mobile ul li{
+	padding:10px 0;
+}
+
+header nav.menu-desktop{
+	float: right;
+}
+
+header nav.menu-desktop ul{
+	padding:8px 0;
+	list-style-type: none;
+}
+
+header nav.menu-desktop ul li{
+	float: left;
+	font-size: 14px;
+	padding:0 20px;
+	text-transform: uppercase;
+}
+
+header ul a{
+	color: #b4b4b4;
+	text-decoration: none;
+}
+
+/**************************************/
+
+/************MOSAICO******************/
+
+.mosaico-single{
+	float: left;
+	width: calc(100% / 6);
+}
+
+.img-mosaico-single{
+	width: 100%;
+	padding-top:100%;
+	background-color: #ccc;
+	border:5px solid white;
+	/*
+	background-image:url('');
+	*/
+}
+
+/**************************************/
+
+/************Serviços******************/
+
+section.servicos > .container{
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top:-30px;
+    text-align: center;
+}
+
+section.servicos > .container > .box-servico{
+    background-image: url(../imagens/icone_dente.png);
+    background-position: center bottom ;
+    background-repeat: no-repeat;
+}
+
+section.servicos > .container > .box-servico > h2{
+    color: white;
+    font-weight: normal;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+section.servicos > .container > .box-servico > p{
+    color: white;
+    font-weight: normal;
+    margin-top: 8px;
+    font-size: 12px;
+
+}
+
+
+section.servicos > .container > .box-servico:nth-of-type(1){
+    background-color: #576975;
+    width: 30%;
+    padding: 30px 0;
+}
+
+section.servicos > .container > .box-servico:nth-of-type(2){
+    background-color: #688293;
+    width: 40%;
+    padding: 50px 0;
+    background-image: none;
+}
+
+section.servicos > .container > .box-servico:nth-of-type(3){
+    background-color: #576975;
+    width: 30%;
+    padding: 30px 0;
+}
+
+/**************************************/
+
+/************PERFIL******************/
+
+section.perfil-container > .container{
+    max-width: 800px;
+}
+
+section.perfil-container > .container > .perfil-wraper{
+    padding-top: 60%;
+    position: relative;
+}
+
+section.perfil-container > .container > .perfil-wraper > .perfil-wrape2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.img-perfil{
+    width: 40%;
+    height: 100%;
+    background-image: url(../imagens/img_perfil.png);
+    background-size: 100% 100%;
+}
+
+.texto-perfil{
+     width: 60%;
+     padding:  0 30px;
+}
+
+.texto-perfil > h2{
+    color: #698293;
+    font-size: 18px;
+}
+
+.texto-perfil > p{
+    color: #4b4b4b;
+    text-align: justify;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+section.video{
+    padding: 50px 0;
+}
+
+section.video > .container > .box-video{
+    float: left;
+    width: 33.3%;
+    position: relative;
+    border: 5px solid white;
+    padding-top: calc(33.3% * 0.6);
+}
+
+.box-video > iframe{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/**************************************/
+
+/****************TRATAMENTO****************/
+
+section.tratamento{
+    padding: 80px 0;
+    
+}
+
+section.tratamento > .tratamento-container{
+    float: left;
+    width: 33.3%;
+    background-color: #688293;
+
+}
+
+section.tratamento > h1{
+    color: #42525d;
+    text-align: center;
+    font-size: 25px;
+    padding: 40px 0;
+}
+
+.tratamento-single{
+    padding: 20px;
+}
+
+.tratamento-single > h2{
+    font-size: 18px;
+    color: #3f3f3f;
+}
+
+.tratamento-single > p{
+    margin: 10px 0;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+/****************************************/
+
+/************SESSÃO DEPOIMENTO************/
+
+section.depoimento > h2{
+    color: #698293;
+    text-align: center; 
+    font-size: 25px;
+}
+
+section.depoimento > .container{
+    padding: 40px 0;
+    max-width: 400px;
+}
+
+section.depoimneto > .container > .depoimento-single{
+    text-align: center;
+    width: 100%;
+    padding:0 2%;
+}
+
+
+.depoimento-single > cite{
+    color: #4b4b4b4b;
+    font-size: 15px;
+}
+
+.depoimento-single > .nome-depoimento{
+    padding: 19px 0;
+} 
+
+.nome-depoimento > img{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+
+.nome-depoimento > span{
+position: relative;
+top: 4px;
+font-size: 13px;
+color: #4b4b4b;
+display: inline-block;
+vertical-align: top;
+}
+
+/****************************************/
+
+/**********SESSÃO REDES SOCIAIS**********/
+
+.insta-chamada{
+    background-color: #98a5ae;
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.insta-chamada > p {
+    line-height: 25px;
+    color: white;
+    font-size: 13px;
+    padding: 10px 0;
+}
+
+.mosaico-social{
+    float: left;
+    width: 100%;
+}
+
+.mosaico-social-img{
+    float: left;
+    width: calc(100% / 9);
+    padding-top: calc(100% / 9);
+    background-color: blue;
+    background-position: center center;
+    border: 6px solid white;
+}
+
+.face-chamada{
+    background-color: #576975;
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.face-chamada > p {
+    line-height: 25px;
+    color: white;
+    font-size: 13px;
+    padding: 10px 0;
+} 
+
+/******************************************/
+
+/****************CONTATO********************/
+
+section.contato{
+	padding:60px 2%;
+}
+
+section.contato > h2{
+	color: #698293;
+	text-align: center;
+	font-size: 18px;
+}
+
+section.contato form{
+	width: 100%;
+	margin: 30px auto;
+	max-width: 500px;
+}
+
+.form-wraper{
+	float: left;
+	padding:0 10px;
+	margin-top: 10px;
+}
+
+.w100{
+	width: 100%;
+}
+
+.w50{
+	width: 50%;
+}
+
+.form-wraper span{
+	font-size: 15px;
+	color: #b4b4b4;
+}
+
+.form-wraper input[type=text]{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 9px;
+	border:1px solid #dadada;
+	margin-top:8px;
+}
+
+.form-wraper textarea{
+	width: 100%;
+	margin-top:8px;
+	padding:8px;
+	height: 121px;
+	resize: none;
+	border: 1px solid #dadada;
+	/*
+	resize: horizontal;
+	resize: vertical;
+	*/
+}
+
+.form-wraper input[type=submit]{
+	width: 100px;
+	display: inline-block;
+	height: 35px;
+	border: 0;
+	background: #688293;
+	color: white;
+	cursor: pointer;
+	/*
+	position: relative;
+	left: 50%;
+	transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	*/
+}
+
+/******************************************/
+
+/*****************FOOTER********************/
+
+footer{
+	padding:40px 2%;
+	background-color: #688293;
+}
+
+footer .container{
+	max-width: 1100px;
+}
+
+footer .footer-block{
+	float: left;
+	width: 33.3%;
+}
+
+.footer-block h2{
+	color: white;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.footer-block p{
+	margin-top:8px;
+	color: white;
+	font-size: 14px;
+}
+
+/******************************************/
+
+
+@media screen and (max-width: 1024px) {
+    .mosaico-social-img{
+        width: calc(100% / 6);
+        padding-top: calc(100% / 6);
+    }
+
+    .mosaico-social >div:nth-last-of-type(1n+7){/*Aparti da div 7 esconda tudo*/
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    header > .container > nav{
+        display: none;
+    }
+
+    header > .container > nav.menu-mobile{
+        display: block;
+    }
+
+    section.servicos > .container{
+    flex-direction: column;
+    }
+
+    section.servicos > .container > .box-servico:nth-of-type(1){
+    width: 90%;
+    max-width: 350px;
+    padding: 30px 2%;
+    }
+
+    section.servicos > .container > .box-servico:nth-of-type(2){
+        width: 90%;
+        max-width: 380px;
+        padding: 40px 2%;
+    }
+
+    section.servicos > .container > .box-servico:nth-of-type(3){
+        width: 90%;
+        max-width: 350px;
+        padding: 30px 2%;
+    }
+
+    section.perfil-container > .container > .perfil-wraper {
+        padding-top: 0;
+    }
+
+    section.perfil-container > .container > .perfil-wraper > .perfil-wrape2{
+        text-align: center;
+        display: inline-block;
+        position: static ;
+        margin: auto;
+    }
+
+    .img-perfil{
+        width: 50%;
+        padding-top: 70%;
+        display: inline-block;
+    }
+    
+    .texto-perfil{
+        width: 100%;
+        display: inline-block;
+    }
+
+    section.video > .container > .box-video{
+        width: 100%;
+        border: 1px solid white;
+        padding-top: calc(100% * 0.6);
+
+    }
+    
+    .box-video > iframe{
+        position: absolute;
+        left: 10%;
+        top: 0;
+        width: 80%;
+        height: 80%;
+    }
+
+    .mosaico-social-img{
+        width: calc(100% / 3);
+        padding-top: calc(100% / 3);
+    }
+
+    .mosaico-social >div:nth-last-of-type(1n+4){/*Aparti da div 7 esconda tudo*/
+        display: none;
+    }
+
+    footer{
+        text-align: center;
+        float: none;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width:580px) {
+    .img-perfil{
+        width: 80%;
+        padding-top: 110%;
+        display: inline-block;
+    }
+
+    section.video > .container > .box-video{
+        width: 100%;
+        border: 1px solid white;
+        padding-top: calc(100% * 0.6);
+
+    }
+
+    .w100{
+        width: 100%;
+    }
+    
+}
